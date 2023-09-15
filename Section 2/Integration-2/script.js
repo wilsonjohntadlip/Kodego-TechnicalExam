@@ -17,45 +17,37 @@ getAlbums();
 getrelatedArtist();
 // document.body.addEventListener("DOMContentLoaded", getLyrics());
 
-
-let minutes ;
-let seconds ;
+let minutes;
+let seconds;
 let Duration = musicSlider.value;
 
 let int;
 
-
-function timer(){
-  if(musicSlider.value == 613){
+function timer() {
+  if (musicSlider.value == 613) {
     clearInterval(int);
     playbtn.classList.remove("hidden");
     pausebtn.classList.add("hidden");
     vinyl.classList.remove("animate-spin");
-  }
-  else{
-  musicSlider.value ++;
-  console.log(musicSlider.value);
+  } else {
+    musicSlider.value++;
+    console.log(musicSlider.value);
 
-  minutes = Math.floor((musicSlider.value) / 60);
-  seconds = musicSlider.value % 60;
+    minutes = Math.floor(musicSlider.value / 60);
+    seconds = musicSlider.value % 60;
 
-  let m = minutes < 10 ? "0" + minutes : minutes;
-  let s = 
-      seconds < 10
-      ? "0" + seconds
-      : seconds < 60
-      ? seconds
-      : seconds;
+    let m = minutes < 10 ? "0" + minutes : minutes;
+    let s = seconds < 10 ? "0" + seconds : seconds < 60 ? seconds : seconds;
 
-      currentDurationText.innerHTML = m + ":" + s;
+    currentDurationText.innerHTML = m + ":" + s;
   }
 }
 
-musicSlider.addEventListener("change", ()=>{
+musicSlider.addEventListener("change", () => {
   timer();
-})
+});
 
-function timerstart(){
+function timerstart() {
   int = setInterval(timer, 1000);
 }
 
@@ -74,7 +66,6 @@ togglePlayBtn.addEventListener("click", () => {
     vinyl.classList.remove("animate-spin");
   }
 });
-
 
 // OTHER ALBUMS
 
@@ -160,7 +151,6 @@ async function getrelatedArtist() {
     console.error(error);
   }
 }
-
 
 // BUTTON SWITCHING
 
