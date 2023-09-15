@@ -56,17 +56,3 @@ togglePlayBtn.addEventListener("click", () => {
     vinyl.classList.remove("animate-spin");
   }
 });
-
-// togglePlayBtn.addEventListener("click", () => {
-//   toggleOn = !toggleOn;
-
-//   if (toggleOn) {
-//     playbtn.classList.add("hidden");
-//     pausebtn.classList.remove("hidden");
-//     vinyl.classList.add("animate-spin");
-//   } else {
-//     playbtn.classList.remove("hidden");
-//     pausebtn.classList.add("hidden");
-//     vinyl.classList.remove("animate-spin");
-//   }
-// });
