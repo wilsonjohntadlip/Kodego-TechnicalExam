@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+body {
+  background: url(https://s3-alpha-sig.figma.com/img/0124/e327/82a67cb60dac1944782fbe368f616907?Expires=1695600000&Signature=hDym1jeA5HMPRH6K~5IfxLdGDw115H-BVRHW8pbquQSO2onzD~1xJsxSDoi2XGrJNcSpd150FmCd1TrDTcuwWTeepKPTrzFr~E~kmrTQh1nvinODBBMROHO1EHIplv0MJzBEMkO1UXU14NCcuiLUnpFK5Zu27GGPBMwuX~u2biEZp9qREsHf1F7XHaFGQJz3YvQEhJTyjOQtjVZPLLsBbONgcwJjRwvZOlhjPdgDc7nHBuLJkdCYPhBBIadZ1dVd~yfgnujv2bvRx5C2ovNiEG7QnXFrEcoRgTrUVJMHRdxbdHk33wCndklhUbu5hf8KEqg2nodYqC7dTiISCKibmg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
+
+.phone {
+  background: rgba(245, 245, 245, 0.75);
+}
+
+.title {
+  color: #28111E;
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.subtitle {
+  color: #28111E;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+::-webkit-scrollbar {
+  width: 30px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 10px;
+  height: 1%;
+  opacity: .7;
+}
